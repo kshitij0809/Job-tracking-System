@@ -1,0 +1,26 @@
+NODE_ENV=
+#DATABASE_URL=
+COOKIE_SECRET=
+PORT=
+
+# Urls should end with /
+BUCKET_PORT=
+ROOT_DOMAIN=
+ALLOWED_DOMAIN=
+
+
+# Database Credentials
+DB_USERNAME=
+DB_PASSWORD=
+DB_NAME=
+DB_HOSTNAME=
+
+# Registration
+USER_REGISTRATIONS=
+
+# Roles
+ADMIN=admin
+END_USER=end_user
+
+ADMIN_MAIL=
+

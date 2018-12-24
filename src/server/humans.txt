@@ -1,0 +1,10 @@
+/* TEAM */
+  Chef: Kshitij Pratap 
+  Contact: kshitij [dot] pratap [at] stockroom [dot] io
+  Github: @kshitij0809
+  From: India
+
+/* SITE */
+  Last update: Date.now()
+  Language: English
+  Doctype: HTML5
