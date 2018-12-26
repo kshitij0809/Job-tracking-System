@@ -187,16 +187,13 @@ exports.signup = (req, res) => {
     res.status(400).json({ message: 'End User Registations has not yet started.' })
     return
   }
-  console.log("hekk",req.body)
 
   if (req.body.type === 'remote' && !verifyPassword(req.body.password)) {
-    console.log("DDddddddddddddjddjdj")
     res.status(412).json({ message: 'Password too short.' })
     return
   }
 
   if (!verifyEmail(req.body.email)) {
-    console.log("DDddddddddddd",req.body)
     res.status(412).json({ message: 'Invalid Email.' })
     return
   }
