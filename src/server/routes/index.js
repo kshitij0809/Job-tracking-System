@@ -5,7 +5,7 @@ import TokenMiddleware from '../app/middlewares/TokenMiddleware'
 // import MemberTokenMiddleware from '../app/middlewares/MemberTokenMiddleware'
 
 import RoleMiddleware from '../app/middlewares/RoleMiddleware'
-
+import EmailVerificationMiddleware from '../app/middlewares/EmailVerificationMiddleware'
 import {
   ADMIN_ROUTE,
   USERS_ROUTE,
@@ -18,7 +18,7 @@ const router = require('express').Router()
 
 const UserMiddlewareGroup = [
   TokenMiddleware.verify,
-  // EmailVerificationMiddleware.verifyEmail,
+  EmailVerificationMiddleware.verifyEmail,
   // CompleteDetailsMiddleware.completeDetails,
 ]
 
@@ -42,7 +42,7 @@ router.use(
 
 router.use(SESSION_ROUTE, require('./session'))
 router.use(USERS_ROUTE, require('./users'))
-// router.use(ADMIN_ROUTE, require('./admin'))
+router.use(ADMIN_ROUTE, require('./admin'))
 // router.use(MEMBERS_ROUTE, require('./members'))
 router.use('/g', require('./global'))
 
