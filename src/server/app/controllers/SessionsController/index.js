@@ -68,6 +68,109 @@ exports.usersLogin = (req, res) => {
   })
 }
 
+// handle member login
+exports.membersLogin = (req, res) => {
+  models.Member.findOne({
+    where: { email: req.body.email },
+    attributes: ['id', 'password', 'email', 'role'],
+  }).then((member) => {
+    if (member == null) {
+      res.status(404).json({ message: 'No User Found.' })
+    } else if (comparePassword(req.body.password, member.dataValues.password)) {
+      models.MemberToken.create({
+        token: generateToken(member.dataValues.id, member.dataValues.email),
+        MemberId: member.dataValues.id,
+        expirationTime: moment().day(7),
+        userAgent: req.headers['user-agent'],
+        ip: req.connection.remoteAddress,
+      }).then((r) => {
+        res.status(200).json({
+          message: 'Successfully Loggen In.',
+          token: r.dataValues.token,
+          email: member.dataValues.email,
+          role: member.dataValues.role,
+        })
+      }).catch((err) => {
+        res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
+      })
+    } else {
+      res.status(401).json({ message: 'Please enter correct credentials!' })
+    }
+  })
+}
+
+// handle user logout
+exports.usersLogout = (req, res) => {
+  const authHeader = req.get('Authorization')
+  if (authHeader === undefined) {
+    res.status(400).json({ message: 'Bad Token.' })
+    return
+  }
+
+  const token = authHeader.substr(6)
+  models.Token.destroy({
+    where: {
+      token,
+    },
+  }).then(() => {
+    res.status(200).json({
+      message: 'Successfully Logged Out.',
+    })
+  })
+}
+
+// handle member logout
+exports.membersLogout = (req, res) => {
+  const authHeader = req.get('Authorization')
+  if (authHeader === undefined) {
+    res.status(400).json({ message: 'Bad Token.' })
+    return
+  }
+
+  const token = authHeader.substr(6)
+  models.MemberToken.destroy({
+    where: {
+      token,
+    },
+  }).then(() => {
+    res.status(200).json({ message: 'Successfully Logged Out.' })
+  })
+}
+
+/**
+ * Token generation util
+ * @param  {[string]} email [user email]
+ * @param  {[Object]} res   [response object]
+ * @return
+ */
+const tokenGenerate = (email, res) => {
+  models.User.findOne({
+    where: {
+      email,
+    },
+    attributes: ['id', 'password', 'email', 'role'],
+  }).then((user) => {
+    models.Token.destroy({
+      where: { UserId: user.dataValues.id },
+    }).then(() => {
+      models.Token.create({
+        token: generateToken(user.dataValues.id, user.dataValues.email),
+        UserId: user.dataValues.id,
+        expirationTime: moment().day(30),
+      }).then((r) => {
+        res.status(200).json({
+          message: 'Sucessfully Logged In.',
+          token: r.dataValues.token,
+          name: user.dataValues.name,
+          email: user.dataValues.email,
+          role: user.dataValues.role,
+        })
+      })
+    }).catch(() => {
+      res.status(500).json({ message: 'Something Went Wrong.' })
+    })
+  })
+}
 
 // handle signup
 exports.signup = (req, res) => {
