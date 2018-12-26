@@ -4,8 +4,9 @@ import models from '../models'
 exports.verify = (req, res, next) => {
   const authHeader = req.get('Authorization')
   if (authHeader !== undefined) {
+    
     // Extract token from Authorization header
-    const token = authHeader.substr(6)
+    const token = authHeader.substr(7)
 
     if (!token) {
       // if no token is supplied in Authorization header
@@ -16,7 +17,7 @@ exports.verify = (req, res, next) => {
         where: { token },
         include: [{
           model: models.User,
-          attributes: ['id', 'role', 'verified', 'isCompleted', 'name', 'imageUrl', 'type', 'email', 'mobile', 'registrationReferalCodeStatus', 'paymentReferalCodeStatus', 'workshopPaymentStatus', 'centralPaymentStatus'],
+          attributes: ['id', 'role', 'verified', 'name', 'type', 'email'],
         }],
       }).then((r) => {
         if (!r) {

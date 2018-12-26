@@ -11,6 +11,7 @@ module.exports = {
     migrationStoragePath: 'migrationsExecuted.json',
     seederStorage: 'json',
     seederStoragePath: 'seedersExecuted.json',
+    operatorsAliases: false,
   },
   test: {
     dialect: 'postgres',

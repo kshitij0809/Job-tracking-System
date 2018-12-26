@@ -64,8 +64,9 @@ app.set('view engine', 'ejs')
 
 // app.use(favicon(path.join(__dirname, 'favicon.ico')))
 app.use(logger('dev'))
+
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cookieParser())
 
 // Robots.txt

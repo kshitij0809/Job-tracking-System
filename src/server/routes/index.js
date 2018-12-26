@@ -40,8 +40,8 @@ router.use(
 //   MemberTokenMiddleware.verify,
 // )
 
-// router.use(SESSION_ROUTE, require('./session'))
-// router.use(USERS_ROUTE, require('./users'))
+router.use(SESSION_ROUTE, require('./session'))
+router.use(USERS_ROUTE, require('./users'))
 // router.use(ADMIN_ROUTE, require('./admin'))
 // router.use(MEMBERS_ROUTE, require('./members'))
 router.use('/g', require('./global'))

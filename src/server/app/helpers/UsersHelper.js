@@ -1,6 +1,9 @@
 import crypto from 'crypto'
 import bcrypt from 'bcrypt'
 import moment from 'moment'
+import Regex from 'regex'
+import emailverifier from 'email-verify'
+
 
 export const verifyPassword = (password) => {
   if (password.length < 8) {
@@ -9,10 +12,7 @@ export const verifyPassword = (password) => {
   return true
 }
 
-export const verifyEmail = (email) => {
-  const regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm
-  return regex.test(email)
-}
+export const verifyEmail = (email) => /^[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)
 
 export const hashPassword = (password) => {
   // Hash using bcrypt
