@@ -107,7 +107,7 @@ exports.usersLogout = (req, res) => {
     return
   }
 
-  const token = authHeader.substr(6)
+  const token = authHeader.substr(7)
   models.Token.destroy({
     where: {
       token,
@@ -127,7 +127,7 @@ exports.membersLogout = (req, res) => {
     return
   }
 
-  const token = authHeader.substr(6)
+  const token = authHeader.substr(7)
   models.MemberToken.destroy({
     where: {
       token,
