@@ -1,6 +1,9 @@
 /* eslint no-use-before-define:0 */
 /* eslint no-restricted-globals:0 */
 /* eslint no-console:0 */
+require('babel-register')({
+    presets: [ 'env' ]
+})
 
 // import { errorMail } from './app/mailers'
 import { isTest, env, isProd } from './app/utils/env'
@@ -49,7 +52,7 @@ const server = http.createServer(app)
 // sync() will create all table if they doesn't exist in database
 if (!isTest) {
   models.sequelize.sync().then(() => {
-    server.listen(port, '127.0.0.1')
+    server.listen(port, 'localhost')
     server.on('error', onError)
     server.on('listening', onListening)
   })
