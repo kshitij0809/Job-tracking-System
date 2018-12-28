@@ -26,7 +26,21 @@ exports.verify = (req, res, next) => {
           res.status(403).json({ message: 'Invalid Token.' })
         } else if (moment() > r.dataValues.expirationTime) {
           // If token expired
-          res.status(403).json({ message: 'Token Expired.' })
+           var MemberId=r.Member.dataValues.id
+                   
+           models.Token.update(
+              { 
+                token: generateToken(r.Member.dataValues.id, r.Member.dataValues.email),
+                MemberId: r.Member.dataValues.id,
+                expirationTime: moment().day(10), 
+              },
+              { where: { MemberId } },
+            ).then(() => {
+                res.locals.User = r.Member.dataValues
+                res.locals.MemberId = r.Member.dataValues.id
+                res.locals.role = r.Member.dataValues.role
+                next()
+            })
         } else if (r.dataValues.userAgent !== userAgent) {
           // If user agent is different then reject request
           res.status(403).json({ message: 'We have detected a browser change. Please login again.' })
