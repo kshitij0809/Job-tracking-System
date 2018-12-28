@@ -1,5 +1,9 @@
 import moment from 'moment'
 import models from '../models'
+import RefreshTokenMiddleware from './RefreshTokenMiddleware'
+import { generateToken } from '../helpers/TokenHelper'
+
+
 
 exports.verify = (req, res, next) => {
   const authHeader = req.get('Authorization')
@@ -25,9 +29,23 @@ exports.verify = (req, res, next) => {
           res.status(403).json({ message: 'Invalid Token.' })
           return
         } else if (moment() > r.dataValues.expirationTime) {
-          // If token expired
-          res.status(403).json({ message: 'Token Expired.' })
-          return
+          var UserId=r.User.dataValues.id
+                   
+           models.Token.update(
+              { 
+                token: generateToken(r.User.dataValues.id, r.User.dataValues.email),
+                UserId: r.User.dataValues.id,
+                expirationTime: moment().day(10), 
+              },
+              { where: { UserId } },
+            ).then(() => {
+                res.locals.User = r.User.dataValues
+                res.locals.UserId = r.User.dataValues.id
+                res.locals.role = r.User.dataValues.role
+                next()
+            })
+          // RefreshTokenMiddleware.verify
+       // next()
         } else if (r.User.dataValues.deleted) {
           // If user has been deleted
           res.status(404).json({ message: 'User not found.' })
@@ -37,7 +55,7 @@ exports.verify = (req, res, next) => {
         res.locals.User = r.User.dataValues
         res.locals.UserId = r.User.dataValues.id
         res.locals.role = r.User.dataValues.role
-        next()
+                next()
       })
     }
   } else {

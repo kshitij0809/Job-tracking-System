@@ -2,12 +2,12 @@
 
 // Middlewares
 import TokenMiddleware from '../app/middlewares/TokenMiddleware'
-// import MemberTokenMiddleware from '../app/middlewares/MemberTokenMiddleware'
+import MemberTokenMiddleware from '../app/middlewares/MemberTokenMiddleware'
 
 import RoleMiddleware from '../app/middlewares/RoleMiddleware'
 import EmailVerificationMiddleware from '../app/middlewares/EmailVerificationMiddleware'
 import {
-  ADMIN_ROUTE,
+  SUPER_ADMIN_ROUTE,
   USERS_ROUTE,
   MEMBERS_ROUTE,
   SESSION_ROUTE,
@@ -31,18 +31,18 @@ router.use(
 
 
 // router.use(
-//   ADMIN_ROUTE,
+//   SUPER_ADMIN_ROUTE,
 //   MemberTokenMiddleware.verify,
 // )
 
-// router.use(
-//   MEMBERS_ROUTE,
-//   MemberTokenMiddleware.verify,
-// )
+router.use(
+  MEMBERS_ROUTE,
+  MemberTokenMiddleware.verify,
+)
 
 router.use(SESSION_ROUTE, require('./session'))
 router.use(USERS_ROUTE, require('./users'))
-router.use(ADMIN_ROUTE, require('./admin'))
+router.use(SUPER_ADMIN_ROUTE, require('./admin'))
 // router.use(MEMBERS_ROUTE, require('./members'))
 router.use('/g', require('./global'))
 
