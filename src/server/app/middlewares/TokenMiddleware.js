@@ -1,6 +1,5 @@
 import moment from 'moment'
 import models from '../models'
-import RefreshTokenMiddleware from './RefreshTokenMiddleware'
 import { generateToken } from '../helpers/TokenHelper'
 
 

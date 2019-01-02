@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
     User.hasMany(models.Token)
     // User.hasMany(models.Payments)
     // User.belongsToMany(models.Team, { through: 'UserTeam', foreignKey: 'UserId' })
-    // User.belongsToMany(models.Event, { through: 'CoordiEvents', foreignKey: 'UserId' })
+    User.belongsToMany(models.Job, { through: 'TotalJobs', foreignKey: 'UserId' })
     // User.hasMany(models.Team, { foreignKey: 'LeaderId' })
     // User.hasMany(models.Uploads, { foreignKey: 'UserId' })
     // User.hasMany(models.UsedReferalCodes)

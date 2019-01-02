@@ -1,5 +1,6 @@
 import moment from 'moment'
 import models from '../models'
+import { generateToken } from '../helpers/TokenHelper'
 
 import { memberLog } from '../logs'
 
