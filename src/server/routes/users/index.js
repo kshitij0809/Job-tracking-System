@@ -54,5 +54,55 @@ router.get(
   UserController.getBankDetails,
 )
 
+router.post(
+  '/addjob',
+  UserController.addJobDetails,
+)
+
+router.post(
+  '/addcontact',
+  UserController.addContact,
+)
+
+router.post(
+  '/addstatus',
+  UserController.addJobStatus,
+)
+
+router.post(
+  '/addnote',
+  UserController.addjobNote,
+)
+
+router.post(
+  '/adddocument',
+  UserController.addjobDocument,
+)
+
+router.get(
+  '/job/:UserId',
+  UserController.getJobDetails,
+)
+
+router.get(
+  '/contact/:JobId',
+  UserController.getContact,
+)
+
+router.get(
+  '/status/:JobId',
+  UserController.getJobStatus,
+)
+
+router.get(
+  '/note/:JobId',
+  UserController.getjobNote,
+)
+
+router.get(
+  '/document/:JobId',
+  UserController.getjobDocument,
+)
+
 
 module.exports = router
