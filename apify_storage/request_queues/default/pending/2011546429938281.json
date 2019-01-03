@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/auto-response-parameters/auto-response-parameters.xhtml#auto-response-parameters-2",
+    "uniqueKey": "https://www.iana.org/assignments/auto-response-parameters/auto-response-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "cVM7hEtEu8BGPOO"
+}

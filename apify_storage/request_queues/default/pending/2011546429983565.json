@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20131111-bike",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20131111-bike",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "x4u3oMObjBVIe7S"
+}

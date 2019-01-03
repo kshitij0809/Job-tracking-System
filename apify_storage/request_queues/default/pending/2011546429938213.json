@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/aead-parameters/aead-parameters.xhtml#aead-parameters-2",
+    "uniqueKey": "https://www.iana.org/assignments/aead-parameters/aead-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "CF8dA7Uo96QhT5N"
+}

@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/go/rfc5981",
+    "uniqueKey": "https://www.iana.org/go/rfc5981",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "E5AdkD27fU7v3Hn"
+}

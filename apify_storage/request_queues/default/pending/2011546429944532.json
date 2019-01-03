@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/ospf-sig-alg/ospf-sig-alg.xhtml#ospf-sig-alg-1",
+    "uniqueKey": "https://www.iana.org/assignments/ospf-sig-alg/ospf-sig-alg.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "0x4tgQPu6ICezSE"
+}

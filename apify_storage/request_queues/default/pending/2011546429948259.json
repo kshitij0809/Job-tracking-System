@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/alert-urns/alert-urns.xhtml#identifiers",
+    "uniqueKey": "https://www.iana.org/assignments/alert-urns/alert-urns.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "sTW0Kc8UGd3wwSd"
+}

@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20140414-fitness",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20140414-fitness",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "03se2G4TNxF6ffL"
+}

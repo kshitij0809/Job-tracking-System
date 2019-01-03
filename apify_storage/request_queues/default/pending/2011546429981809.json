@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20160518-aetna",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20160518-aetna",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "FT9W0Tbu2z7GNDT"
+}

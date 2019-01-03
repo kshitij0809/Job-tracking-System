@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/time-zones/repository/tz-link.html",
+    "uniqueKey": "https://www.iana.org/time-zones/repository/tz-link.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "ZtA7sJ2eDM69fS2"
+}

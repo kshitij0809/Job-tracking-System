@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/jwt/jwt.xhtml#claims",
+    "uniqueKey": "https://www.iana.org/assignments/jwt/jwt.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "EC5exVYxKgyyWor"
+}

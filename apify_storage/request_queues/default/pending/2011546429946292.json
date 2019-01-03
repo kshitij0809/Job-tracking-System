@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/rpki/rpki.xhtml#bgpsec-algorithm-suite",
+    "uniqueKey": "https://www.iana.org/assignments/rpki/rpki.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "E0gccntMZQOIQCc"
+}

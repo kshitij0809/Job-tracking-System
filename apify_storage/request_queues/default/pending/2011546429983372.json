@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20140131-partners",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20140131-partners",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "CMH5Lmzw1mPjget"
+}

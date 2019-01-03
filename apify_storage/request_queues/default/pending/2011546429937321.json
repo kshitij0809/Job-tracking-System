@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/ipv6-anycast-addresses",
+    "uniqueKey": "https://www.iana.org/assignments/ipv6-anycast-addresses",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "eg8ANW9ibhKAOQ2"
+}

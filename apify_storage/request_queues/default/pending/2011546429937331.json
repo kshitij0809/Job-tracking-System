@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/as-numbers",
+    "uniqueKey": "https://www.iana.org/assignments/as-numbers",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "xmGOakk8UvtJq4U"
+}

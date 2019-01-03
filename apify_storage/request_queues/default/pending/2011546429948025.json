@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#alpn-protocol-ids",
+    "uniqueKey": "https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "hcG3gO90lnyMNFd"
+}

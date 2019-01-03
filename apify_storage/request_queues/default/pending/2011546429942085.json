@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/go/rfc4025",
+    "uniqueKey": "https://www.iana.org/go/rfc4025",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "YLGe0khebSZSEfT"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "bduXcm7F5cqAvMV",
+    "url": "https://www.iana.org/dnssec/icann-dps.txt",
+    "uniqueKey": "https://www.iana.org/dnssec/icann-dps.txt",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": "2019-01-02T11:53:03.373Z"
+}

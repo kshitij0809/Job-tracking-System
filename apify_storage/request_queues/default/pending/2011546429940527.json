@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/method-tokens/method-tokens.xhtml#method-tokens-1",
+    "uniqueKey": "https://www.iana.org/assignments/method-tokens/method-tokens.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "6mlUK5sSPz7AZPw"
+}

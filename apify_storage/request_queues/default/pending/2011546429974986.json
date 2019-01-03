@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/form/media-types",
+    "uniqueKey": "https://www.iana.org/form/media-types",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "HbJ10ARxrwpA62T"
+}

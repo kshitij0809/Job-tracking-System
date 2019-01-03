@@ -3,18 +3,28 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     description: DataTypes.TEXT(),  
     company: DataTypes.STRING,
-    abstract: DataTypes.BOOLEAN, // abstract is needed or not
-    field: DataTypes.STRING, // centerstage | departmental | workshop   
-    workType: DataTypes.JSON, // an array of objects with key as the fulltime/parttime/remote/internship.
+    url: DataTypes.STRING, 
+    workType: {
+      type: DataTypes.ENUM,
+      values: ['fulltime','parttime','remote','internship']  
+    }, // an array of objects with key as the fulltime/parttime/remote/internship.
     location: DataTypes.STRING,
-    nextStepDue: DataTypes.DATE, //   store as many    
+    nextStepDue: {
+      type:DataTypes.DATE,
+      allowNull: false
+    },
+    active: {
+      type:DataTypes.BOOLEAN,
+      defaultValue: true
+    },  
   })
+  // console.log(Job)
 
   Job.associate = (models) => {
     Job.belongsTo(models.User, {
       onDelete: 'CASCADE',
       foreignKey: 'UserId',
-      allowNull: true,
+      allowNull: false,
     })    
     Job.belongsToMany(models.User, { through: 'TotalJobs', foreignKey: 'JobId' })
     Job.hasMany(models.Contact)
@@ -25,3 +35,13 @@ module.exports = (sequelize, DataTypes) => {
 
   return Job
 }
+
+
+// {
+//     "title":"developer",
+//     "description":"developerdeveloperdeveloperdeveloperdeveloperdeveloperdeveloperdeveloperdeveloperdeveloperdeveloper",
+//     "company":"stockroom",
+//     "url":"wwww.stockroom.io/job/developer",
+//     "workType":"fulltime",
+//     "location":"banglore",
+//     "nextStepDue":""}

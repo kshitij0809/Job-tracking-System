@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/form/iftype",
+    "uniqueKey": "https://www.iana.org/form/iftype",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "HIp7o4UIJ5qRLWA"
+}

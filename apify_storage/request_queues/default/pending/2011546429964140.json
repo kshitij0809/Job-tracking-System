@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/nokia_mis_1.txt",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/nokia_mis_1.txt",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "5s1MN2g0jJtcua7"
+}

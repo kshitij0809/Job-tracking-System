@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/got_sv_2.1.txt",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/got_sv_2.1.txt",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "Gsvlb41XcZGL2bI"
+}

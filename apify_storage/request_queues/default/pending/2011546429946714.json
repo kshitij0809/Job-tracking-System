@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/security-label-format-selection/security-label-format-selection.xhtml#security-label-format-selection-registry",
+    "uniqueKey": "https://www.iana.org/assignments/security-label-format-selection/security-label-format-selection.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "XBoWwrzbR3CH7p6"
+}

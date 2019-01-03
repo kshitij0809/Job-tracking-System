@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/go/rfc4848",
+    "uniqueKey": "https://www.iana.org/go/rfc4848",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "3v5nskb7YtYwMAG"
+}

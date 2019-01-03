@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/sip-precond-types/sip-precond-types.xhtml#sip-precond-types-1",
+    "uniqueKey": "https://www.iana.org/assignments/sip-precond-types/sip-precond-types.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "093GcdguZlZqs0r"
+}

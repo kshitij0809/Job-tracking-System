@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/eap-psk-parameters/eap-psk-parameters.xhtml#eap-psk-parameters-1",
+    "uniqueKey": "https://www.iana.org/assignments/eap-psk-parameters/eap-psk-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "s6dF0bK0y8lejfb"
+}

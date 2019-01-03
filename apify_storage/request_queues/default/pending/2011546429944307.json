@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/nslp-parameters/nslp-parameters.xhtml#x-type-1-subtypes",
+    "uniqueKey": "https://www.iana.org/assignments/nslp-parameters/nslp-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "gQsbaZ757kx4rGQ"
+}

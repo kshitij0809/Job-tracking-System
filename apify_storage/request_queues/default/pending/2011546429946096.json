@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/rdap-provider-object-tags/rdap-provider-object-tags.xhtml#rdap-provider-object-tags-1",
+    "uniqueKey": "https://www.iana.org/assignments/rdap-provider-object-tags/rdap-provider-object-tags.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "JnOpPfSAqrjuIYv"
+}

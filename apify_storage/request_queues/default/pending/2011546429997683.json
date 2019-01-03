@@ -1,0 +1,15 @@
+{
+    "id": "AiYWM4TZGom7uxv",
+    "url": "https://www.iana.org/domains/root/procedures",
+    "uniqueKey": "https://www.iana.org/domains/root/procedures",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 1,
+    "errorMessages": [
+        "Error: Protocol error (Target.createTarget): Target closed.\n    at Promise (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/Connection.js:73:56)\n    at new Promise (<anonymous>)\n    at Connection.send (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/Connection.js:72:12)\n    at Browser._createPageInContext (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/Browser.js:174:47)\n    at BrowserContext.newPage (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/Browser.js:368:26)\n    at Browser.newPage (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/Browser.js:166:33)\n    at Browser.<anonymous> (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/puppeteer/lib/helper.js:145:23)\n    at PuppeteerPool._openNewTab (/media/kshitij0809/8280B86280B85DFB/projects/Job-tracking-System/node_modules/apify/build/puppeteer_pool.js:493:40)\n    at <anonymous>"
+    ],
+    "headers": {},
+    "userData": {},
+    "handledAt": null
+}

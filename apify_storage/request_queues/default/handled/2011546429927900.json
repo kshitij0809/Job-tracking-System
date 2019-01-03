@@ -1,0 +1,13 @@
+{
+    "id": "ohzP3E3pHfDMp9A",
+    "url": "https://www.iana.org/cgi-bin/intreg/intreg.pl",
+    "uniqueKey": "https://www.iana.org/cgi-bin/intreg/intreg.pl",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": "2019-01-02T11:54:15.163Z"
+}

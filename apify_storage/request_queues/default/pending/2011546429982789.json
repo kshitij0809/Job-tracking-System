@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20141211-lidl",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20141211-lidl",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "1heufCwHyu84zfK"
+}

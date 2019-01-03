@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20140421-discount",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20140421-discount",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "MuPQ8SUBVEW9CS3"
+}

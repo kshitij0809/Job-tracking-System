@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/xml-security-uris/xml-security-uris.xhtml#security-uris",
+    "uniqueKey": "https://www.iana.org/assignments/xml-security-uris/xml-security-uris.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "GtP1Rv4fHzpQsq5"
+}

@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/multicast-addresses",
+    "uniqueKey": "https://www.iana.org/assignments/multicast-addresses",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "SRxCqMkX8drZF0n"
+}

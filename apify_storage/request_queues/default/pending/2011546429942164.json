@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/_6lowpan-parameters/_6lowpan-parameters.xhtml#critical-6lowpan-routing-header-type",
+    "uniqueKey": "https://www.iana.org/assignments/_6lowpan-parameters/_6lowpan-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "G7hjsW4QCC15H6L"
+}

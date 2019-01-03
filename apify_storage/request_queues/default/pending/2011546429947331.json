@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/sasl-mechanisms/sasl-mechanisms.xhtml#sasl-mechanisms-1",
+    "uniqueKey": "https://www.iana.org/assignments/sasl-mechanisms/sasl-mechanisms.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "e9WrE3coutx7S9i"
+}

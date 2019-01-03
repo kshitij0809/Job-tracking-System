@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/iana-ipv6-special-registry",
+    "uniqueKey": "https://www.iana.org/assignments/iana-ipv6-special-registry",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "CxYQEG5OnL8VFzW"
+}

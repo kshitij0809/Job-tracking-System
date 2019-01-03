@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/gsmpv3-traffic/gsmpv3-traffic.xhtml#gsmpv3-traffic-1",
+    "uniqueKey": "https://www.iana.org/assignments/gsmpv3-traffic/gsmpv3-traffic.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "fS9nWuwoBLnpIlf"
+}

@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/uol_pt_1.xml",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/uol_pt_1.xml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "QQAysstnPUYM39A"
+}

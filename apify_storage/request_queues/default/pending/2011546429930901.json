@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/root/db/coupons.html",
+    "uniqueKey": "https://www.iana.org/domains/root/db/coupons.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "UbGVfoSLAUtc6fF"
+}

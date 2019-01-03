@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/message-header-types/message-header-types.xhtml#message-header-types-1",
+    "uniqueKey": "https://www.iana.org/assignments/message-header-types/message-header-types.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "h9pFvZ65Qwk7afc"
+}

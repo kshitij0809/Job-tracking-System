@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/root/db/click.html",
+    "uniqueKey": "https://www.iana.org/domains/root/db/click.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "K6fhUXk8Bb6SrLa"
+}

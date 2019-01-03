@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20140528-mortgage",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20140528-mortgage",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "aS6iyPm1a8f0Xp7"
+}

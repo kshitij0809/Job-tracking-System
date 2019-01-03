@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20160712-pfizer",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20160712-pfizer",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "V7hYy0BLGuLSp6J"
+}

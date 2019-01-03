@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20160718-chase",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20160718-chase",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "UDcoW3o9ATvGxcn"
+}

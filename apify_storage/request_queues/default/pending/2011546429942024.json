@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-information-element-data-types",
+    "uniqueKey": "https://www.iana.org/assignments/ipfix/ipfix.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "X6uBs0OEtxXdki8"
+}

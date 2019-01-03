@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/sc_zh-cn_4.0.txt",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/sc_zh-cn_4.0.txt",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "cg9Xq7ABT8KP3gl"
+}

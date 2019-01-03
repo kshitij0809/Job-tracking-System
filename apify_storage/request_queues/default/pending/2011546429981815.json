@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20160511-guardian",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20160511-guardian",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "e7cnCFK7sujN8VW"
+}

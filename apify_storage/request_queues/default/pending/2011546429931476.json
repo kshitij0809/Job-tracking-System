@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/root/db/imdb.html",
+    "uniqueKey": "https://www.iana.org/domains/root/db/imdb.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "jpMFfVuGw0tvb3r"
+}

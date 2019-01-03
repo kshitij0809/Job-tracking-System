@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20141031-bloomberg",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20141031-bloomberg",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "f54INspJjL56EnM"
+}

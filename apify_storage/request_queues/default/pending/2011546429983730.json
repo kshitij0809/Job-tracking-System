@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/2008/xml-registry-sample.html",
+    "uniqueKey": "https://www.iana.org/reports/2008/xml-registry-sample.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "xWMF6jX6duZ3POT"
+}

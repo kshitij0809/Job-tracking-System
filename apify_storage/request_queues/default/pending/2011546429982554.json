@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20150428-rent",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20150428-rent",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "aDQ7hs09JxB8Iz2"
+}

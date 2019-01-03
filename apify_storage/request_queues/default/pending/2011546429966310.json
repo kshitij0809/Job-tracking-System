@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/scb_th_1.0.xml",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/scb_th_1.0.xml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "al2Q0GY3X3b0NFn"
+}

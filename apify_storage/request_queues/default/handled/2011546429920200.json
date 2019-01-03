@@ -1,0 +1,13 @@
+{
+    "id": "6SHREgeXeKiCfm9",
+    "url": "https://www.iana.org/abuse",
+    "uniqueKey": "https://www.iana.org/abuse",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": "2019-01-02T11:52:14.986Z"
+}

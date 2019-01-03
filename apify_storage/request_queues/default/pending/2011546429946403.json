@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/go/rfc8322",
+    "uniqueKey": "https://www.iana.org/go/rfc8322",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "6qy5cv3D621FCfg"
+}

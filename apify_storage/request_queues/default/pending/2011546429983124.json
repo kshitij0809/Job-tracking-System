@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20140509-loans",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20140509-loans",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "uyCI50QoM9K8hRD"
+}

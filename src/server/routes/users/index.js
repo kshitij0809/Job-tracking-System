@@ -6,6 +6,8 @@ import express from 'express'
 
 // Controllers
 import UserController from '../../app/controllers/UsersController'
+import JobController from '../../app/controllers/JobsController'
+
 // import EventsController from '../../app/controllers/EventsController'
 // import ExpanseController from '../../app/controllers/EventsController/ExpanseController'
 // import CertificateController from '../../app/controllers/CertificateController'
@@ -26,6 +28,7 @@ import TokenMiddleware from '../../app/middlewares/TokenMiddleware'
 // import { SPP_ROUTE } from '../namespace'
 
 // import { SPP_ROLE } from '../roles'
+import JobsMiddleware from '../../app/middlewares/JobsMiddleware'
 
 const router = express.Router()
 
@@ -54,55 +57,63 @@ router.get(
   UserController.getBankDetails,
 )
 
+router.use(
+  '/job',
+  JobsMiddleware.verify,
+)
+
+
+// User Job routes
+
 router.post(
   '/addjob',
-  UserController.addJobDetails,
+  JobController.create,
 )
 
-router.post(
-  '/addcontact',
-  UserController.addContact,
-)
+// router.post(
+//   '/addcontact',
+//   UserController.addContact,
+// )
 
-router.post(
-  '/addstatus',
-  UserController.addJobStatus,
-)
+// router.post(
+//   '/addstatus',
+//   UserController.addJobStatus,
+// )
 
-router.post(
-  '/addnote',
-  UserController.addjobNote,
-)
+// router.post(
+//   '/addnote',
+//   UserController.addjobNote,
+// )
 
-router.post(
-  '/adddocument',
-  UserController.addjobDocument,
-)
+// router.post(
+//   '/adddocument',
+//   UserController.addjobDocument,
+// )
 
-router.get(
-  '/job/:UserId',
-  UserController.getJobDetails,
-)
+// router.get(
+//   '/job/:UserId',
+//   UserController.getJobDetails,
+// )
 
-router.get(
-  '/contact/:JobId',
-  UserController.getContact,
-)
+// router.get(
+//   '/contact/:JobId',
+//   UserController.getContact,
+// )
 
-router.get(
-  '/status/:JobId',
-  UserController.getJobStatus,
-)
+// router.get(
+//   '/status/:JobId',
+//   UserController.getJobStatus,
+// )
 
-router.get(
-  '/note/:JobId',
-  UserController.getjobNote,
-)
+// router.get(
+//   '/note/:JobId',
+//   UserController.getjobNote,
+// )
 
-router.get(
-  '/document/:JobId',
-  UserController.getjobDocument,
-)
+// router.get(
+//   '/document/:JobId',
+//   UserController.getjobDocument,
+// )
 
 
 module.exports = router

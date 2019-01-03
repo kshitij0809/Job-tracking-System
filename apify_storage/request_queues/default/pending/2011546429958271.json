@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/domains/idn-tables/tables/com_syrc_1.2.txt",
+    "uniqueKey": "https://www.iana.org/domains/idn-tables/tables/com_syrc_1.2.txt",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "mTNc1jSFDqCp3JE"
+}

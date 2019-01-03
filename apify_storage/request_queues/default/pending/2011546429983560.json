@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/c.2.9.2.d/20131111-estate",
+    "uniqueKey": "https://www.iana.org/reports/c.2.9.2.d/20131111-estate",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "MEbKu1yGjyqc0wC"
+}

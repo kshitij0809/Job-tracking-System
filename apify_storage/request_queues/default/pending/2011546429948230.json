@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/posh-service-names/posh-service-names.xhtml#service-names",
+    "uniqueKey": "https://www.iana.org/assignments/posh-service-names/posh-service-names.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "LzriztZMJ4v6nvw"
+}

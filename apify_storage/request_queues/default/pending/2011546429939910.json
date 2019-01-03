@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/evpn/evpn.xhtml#route-types",
+    "uniqueKey": "https://www.iana.org/assignments/evpn/evpn.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "37NU0XVASoTG81B"
+}

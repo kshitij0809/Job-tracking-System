@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/civic-address-types-registry/civic-address-types-registry.xhtml#catypes",
+    "uniqueKey": "https://www.iana.org/assignments/civic-address-types-registry/civic-address-types-registry.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "MUu0XqL4xktrsFc"
+}

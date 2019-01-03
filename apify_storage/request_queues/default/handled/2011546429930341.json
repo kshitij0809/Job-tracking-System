@@ -1,0 +1,13 @@
+{
+    "id": "ilVmGn0naTsfTAu",
+    "url": "https://www.iana.org/domains/root/db/adult.html",
+    "uniqueKey": "https://www.iana.org/domains/root/db/adult.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": "2019-01-02T11:55:07.750Z"
+}

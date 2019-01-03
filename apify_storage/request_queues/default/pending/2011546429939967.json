@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/assignments/eap-fast-parameters/eap-fast-parameters.xhtml#eap-fast-parameters-2",
+    "uniqueKey": "https://www.iana.org/assignments/eap-fast-parameters/eap-fast-parameters.xhtml",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "0OL3npSL1ES0Ie9"
+}

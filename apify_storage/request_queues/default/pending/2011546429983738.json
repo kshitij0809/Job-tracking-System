@@ -1,0 +1,13 @@
+{
+    "url": "https://www.iana.org/reports/2008/root-aaaa-announcement.html",
+    "uniqueKey": "https://www.iana.org/reports/2008/root-aaaa-announcement.html",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": null,
+    "id": "NE4XbB7A8XrKcby"
+}

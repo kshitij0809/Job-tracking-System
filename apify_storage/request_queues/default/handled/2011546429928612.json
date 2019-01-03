@@ -1,0 +1,13 @@
+{
+    "id": "0CFgzndAzSnyHwK",
+    "url": "https://www.iana.org/go/rfc6116",
+    "uniqueKey": "https://www.iana.org/go/rfc6116",
+    "method": "GET",
+    "payload": null,
+    "noRetry": false,
+    "retryCount": 0,
+    "errorMessages": null,
+    "headers": {},
+    "userData": {},
+    "handledAt": "2019-01-02T11:54:21.176Z"
+}
