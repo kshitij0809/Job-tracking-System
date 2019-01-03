@@ -1,7 +1,7 @@
 import models from '../models'
 
 exports.verify = (req, res, next) => {
-  const { JobId } = req.params
+  var JobId  = req.params.id
 
   if (!JobId) {
     res.status(404).json({ message: 'Job Not Found.' })

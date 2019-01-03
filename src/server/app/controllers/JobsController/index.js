@@ -1,29 +1,36 @@
 import models from '../../models'
 // import { registerUtil } from '../../helpers/EventsHelper'
+const Sequelize = require('sequelize')
 
-// // View all Events
-// exports.index = (req, res) => {
-//   models.Job.findAll({
-//     where: {
-//       type: { $ne: 'workshop' },
-//     },
-//     attributes: ['id', 'name', 'description', 'thumbnail', 'tags'],
-//     include: [{
-//       model: models.Department,
-//       attributes: ['id', 'name'],
-//     }],
-//   }).then((events) => {
-//     const e = []
-//     events.forEach((row) => {
-//       e.push(row.dataValues)
-//     })
-//     res.status(200).json({ events: e })
-//   }).catch((err) => {
-//     res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
-//   })
-// }
+// View all Job
+exports.index = (req, res) => {
+  const { UserId } = res.locals
+  models.Job.findAll({
+    where: {
+      UserId,
+    },
+    attributes: ['id', 
+    'title',
+    'description',
+    'company',
+    'url',
+    'workType',
+    'location',
+    'nextStepDue',
+    'UserId'],
+    
+  }).then((jobs) => {
+    const e = []
+    jobs.forEach((row) => {
+      e.push(row.dataValues)
+    })
+    res.status(200).json({ jobs: e })
+  }).catch((err) => {
+    res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
+  })
+}
 
-// Create new Event
+// Create new Job
 exports.create = (req, res) => {
   const { UserId } = res.locals
   console.log(UserId,req.body)
@@ -42,25 +49,29 @@ exports.create = (req, res) => {
       console.log(e)
       res.status(201).json({ message: 'Job Created.' })
     }).catch((err) => {
-      res.status(500).json({ message: 'Something Went Wrong. in body', err: err })
+      res.status(500).json({ message: 'Something Went Wrong. in body', err: err.code })
     })
   } else {
     res.status(400).json({ message: 'Invalid Data.' })
   }
 }
 
-// // View an Event
-// exports.show = (req, res) => {
-//   models.Event.findById(req.params.id).then((event) => {
-//     if (event === null) {
-//       res.status(404).json({ message: 'Event Not Found.' })
-//       return
-//     }
-//     res.status(200).json({ message: 'Event Details Fetched.', event })
-//   }).catch(() => {
-//     res.status(500).json({ message: "Something Doesn't seem right" })
-//   })
-// }
+// View an Job
+exports.show = (req, res) => {
+  const { UserId } = res.locals
+  models.Job.findAll({where:{UserId:UserId,id:req.params.id}}).then((job) => {
+    if (job === null) {
+      res.status(404).json({ message: 'Job Not Found.' })
+      return
+    }
+
+    res.status(200).json({ message: 'Job Details Fetched.', job })
+  }).catch((err) => {
+    res.status(500).json({ message: "Something Doesn't seem right" ,err:err})
+  })
+
+
+}
 
 
 // // Update an Event

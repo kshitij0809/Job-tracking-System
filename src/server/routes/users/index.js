@@ -58,7 +58,7 @@ router.get(
 )
 
 router.use(
-  '/job',
+  '/job/:id',
   JobsMiddleware.verify,
 )
 
@@ -95,10 +95,16 @@ router.post(
 //   UserController.getJobDetails,
 // )
 
-// router.get(
-//   '/contact/:JobId',
-//   UserController.getContact,
-// )
+router.get(
+  '/jobs',
+  JobController.index,
+)
+
+
+router.get(
+  '/job/:id',
+  JobController.show,
+)
 
 // router.get(
 //   '/status/:JobId',
