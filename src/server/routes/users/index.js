@@ -70,36 +70,20 @@ router.post(
   JobController.create,
 )
 
-// router.post(
-//   '/addcontact',
-//   UserController.addContact,
-// )
+router.put(
+  '/addjob/:id',
+  JobController.updatejob,
+)
 
-// router.post(
-//   '/addstatus',
-//   UserController.addJobStatus,
-// )
-
-// router.post(
-//   '/addnote',
-//   UserController.addjobNote,
-// )
-
-// router.post(
-//   '/adddocument',
-//   UserController.addjobDocument,
-// )
-
-// router.get(
-//   '/job/:UserId',
-//   UserController.getJobDetails,
-// )
+router.delete(
+  '/addjob/:id',
+  JobController.destroyjob
+)
 
 router.get(
   '/jobs',
   JobController.index,
 )
-
 
 router.get(
   '/job/:id',

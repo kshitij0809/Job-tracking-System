@@ -74,35 +74,36 @@ exports.show = (req, res) => {
 }
 
 
-// // Update an Event
-// exports.update = (req, res) => {
-//   if (!req.body.details) {
-//     res.status(204).json({ message: 'No content Provided.' })
-//     return
-//   }
+// Update an Job
+exports.updatejob = (req, res) => {
 
-//   models.Event.update(
-//     req.body.details,
-//     { where: { id: req.params.id } },
-//   ).then(() => {
-//     res.status(200).json({ message: 'Event Updated Successfully!' })
-//   }).catch((err) => {
-//     res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
-//   })
-// }
+  if (!req.body.details) {
+    res.status(204).json({ message: 'No content Provided.' })
+    return
+  }
 
-// // Delete an Event
-// exports.destroy = (req, res) => {
-//   models.Event.destroy({
-//     where: {
-//       id: req.params.id,
-//     },
-//   }).then(() => {
-//     res.status(204).json({ message: 'Event Deleted Successfully!' })
-//   }).catch((err) => {
-//     res.status(400).json({ message: err.errors[0].message })
-//   })
-// }
+  models.Job.update(
+    req.body.details,
+    { where: { id: req.params.id } },
+  ).then(() => {
+    res.status(200).json({ message: 'Job Updated Successfully!' })
+  }).catch((err) => {
+    res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
+  })
+}
+
+// Delete an Job
+exports.destroyjob = (req, res) => {
+  models.Job.destroy({
+    where: {
+      id: req.params.id,
+    },
+  }).then(() => {
+    res.status(204).json({ message: 'Job Deleted Successfully!' })
+  }).catch((err) => {
+    res.status(400).json({ message: err.errors[0].message })
+  })
+}
 
 
 // // Fetch minimal details of events
