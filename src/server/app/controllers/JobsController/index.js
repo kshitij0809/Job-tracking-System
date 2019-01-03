@@ -56,7 +56,7 @@ exports.create = (req, res) => {
   }
 }
 
-// View an Job
+// View a Job
 exports.show = (req, res) => {
   const { UserId } = res.locals
   models.Job.findAll({where:{UserId:UserId,id:req.params.id}}).then((job) => {
@@ -74,7 +74,7 @@ exports.show = (req, res) => {
 }
 
 
-// Update an Job
+// Update a Job
 exports.updatejob = (req, res) => {
 
   if (!req.body.details) {
@@ -92,7 +92,7 @@ exports.updatejob = (req, res) => {
   })
 }
 
-// Delete an Job
+// Delete a Job
 exports.destroyjob = (req, res) => {
   models.Job.destroy({
     where: {
@@ -106,47 +106,105 @@ exports.destroyjob = (req, res) => {
 }
 
 
-// // Fetch minimal details of events
-// exports.minimal = (req, res) => {
-//   const UserTeams = []
-//   models.User.findById(res.locals.UserId).then((user) => {
-//     user.getTeams().then((teams) => {
-//       teams.forEach((row) => {
-//         UserTeams.push(row.EventId)
-//       })
-//       models.Event.findAll({
-//         order: [
-//           ['updatedAt', 'DESC'],
-//         ],
-//         where: { deleted: false },
-//         include: [{
-//           model: models.Central,
-//           attributes: ['name', 'id'],
-//         },
-//         {
-//           model: models.Department,
-//           attributes: ['name', 'id'],
-//         }],
-//       }).then((e) => {
-//         const events = []
-//         e.forEach((row) => {
-//           const event = {}
-//           event.id = row.id
-//           event.name = row.name
-//           event.type = row.type
-//           event.abstract = row.abstract
-//           event.teamLimit = Number(row.teamLimit)
-//           event.registered = UserTeams.includes(row.id)
-//           event.CentralId = row.CentralId
-//           event.department = row.Department
-//           event.DepartmentId = row.DepartmentId
-//           events.push(event)
-//         })
-//         res.status(200).json({ message: 'Event Fetched.', events })
-//       }).catch((err) => {
-//         res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
-//       })
+
+
+
+// // View all Job-contacts
+// exports.contactindex = (req, res) => {
+//   const { UserId } = res.locals
+//   models.Contact.findAll({
+//     where: {
+//       UserId,
+//     },
+//     attributes: ['id', 
+//     'personName',
+//     'personEmail',
+//     'personNumber'],
+    
+//   }).then((contacts) => {
+//     const e = []
+//     contacts.forEach((row) => {
+//       e.push(row.dataValues)
 //     })
+//     res.status(200).json({ contacts: e })
+//   }).catch((err) => {
+//     res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
 //   })
 // }
+
+// // Create new Job-contacts
+// exports.createcontact = (req, res) => {
+//   const { UserId } = res.locals
+//   console.log(UserId,req.body)
+//   if (req.body) {
+//     // check valid input-contacts fields
+//     models.Contact.create({
+//       UserId:UserId,
+//       title:req.body.title,
+//       description:req.body.description,
+//       company:req.body.company,
+//       url:req.body.url,
+//       workType:req.body.workType,
+//       location:req.body.location,
+//       nextStepDue:req.body.nextStepDue
+//     }).then((e) => {
+//       console.log(e)
+//       res.status(201).json({ message: 'Job Created.' })
+//     }).catch((err) => {
+//       res.status(500).json({ message: 'Something Went Wrong. in body', err: err.code })
+//     })
+//   } else {
+//     res.status(400).json({ message: 'Invalid Data.' })
+//   }
+// }
+
+// // View a Job-contact
+// exports.contactshow = (req, res) => {
+//   const { UserId } = res.locals
+//   models.Contact.findAll({where:{UserId:UserId,id:req.params.id}}).then((job) => {
+//     if (job === null) {
+//       res.status(404).json({ message: 'Job Not Found.' })
+//       return
+//     }
+
+//     res.status(200).json({ message: 'Job Details Fetched.', job })
+//   }).catch((err) => {
+//     res.status(500).json({ message: "Something Doesn't seem right" ,err:err})
+//   })
+
+
+// }
+
+
+// // Update a Job-contacts
+// exports.updatecontact = (req, res) => {
+
+//   if (!req.body.details) {
+//     res.status(204).json({ message: 'No content Provided.' })
+//     return
+//   }
+
+//   models.Contact.update(
+//     req.body.details,
+//     { where: { id: req.params.id } },
+//   ).then(() => {
+//     res.status(200).json({ message: 'Job Updated Successfully!' })
+//   }).catch((err) => {
+//     res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
+//   })
+// }
+
+// // Delete an Job-contacts
+// exports.destroycontact = (req, res) => {
+//   models.Contact.destroy({
+//     where: {
+//       id: req.params.id,
+//     },
+//   }).then(() => {
+//     res.status(204).json({ message: 'Job Deleted Successfully!' })
+//   }).catch((err) => {
+//     res.status(400).json({ message: err.errors[0].message })
+//   })
+// }
+
 

@@ -90,6 +90,33 @@ router.get(
   JobController.show,
 )
 
+
+// User Job-contacts routes
+
+router.post(
+  '/addcontact',
+  JobController.createcontact,
+)
+
+router.put(
+  '/addcontact/:id',
+  JobController.updatecontact,
+)
+
+router.delete(
+  '/addcontact/:id',
+  JobController.destroycontact
+)
+
+router.get(
+  '/contacts',
+  JobController.contactindex,
+)
+
+router.get(
+  '/contact/:id',
+  JobController.contactshow,
+)
 // router.get(
 //   '/status/:JobId',
 //   UserController.getJobStatus,

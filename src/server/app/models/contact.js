@@ -28,6 +28,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
       
     })
+    Contact.belongsTo(models.User, {
+      onDelete: 'CASCADE',
+      foreignKey: 'UserId',
+      allowNull: true,
+      
+    })
     
   }
 

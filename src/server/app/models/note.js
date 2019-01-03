@@ -22,6 +22,12 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE',
       foreignKey: 'JobId',      
     })
+    Note.belongsTo(models.User, {
+      onDelete: 'CASCADE',
+      foreignKey: 'UserId',
+      allowNull: true,
+      
+    })
     
   }
 

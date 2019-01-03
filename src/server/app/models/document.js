@@ -27,6 +27,12 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE',
       foreignKey: 'JobId',      
     })
+    Document.belongsTo(models.User, {
+      onDelete: 'CASCADE',
+      foreignKey: 'UserId',
+      allowNull: true,
+      
+    })
     
   }
 
