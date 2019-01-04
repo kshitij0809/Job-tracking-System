@@ -117,6 +117,11 @@ router.get(
   '/contact/:id',
   JobController.contactshow,
 )
+
+router.get(
+  '/jobcontacts',
+  JobController.contactindexjob,
+)
 // router.get(
 //   '/status/:JobId',
 //   UserController.getJobStatus,
