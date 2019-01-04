@@ -161,7 +161,7 @@ exports.contactindexjob = (req, res) => {
 exports.createcontact = (req, res) => {
   const { UserId } = res.locals
   const { JobId } = res.locals
-  console.log(res.locals.,UserId,req.body)
+  console.log(res.locals.Job,UserId,req.body)
   if (req.body) {
     // check valid input-contacts fields
     models.Contact.create({
@@ -182,54 +182,7 @@ exports.createcontact = (req, res) => {
   }
 }
 
-// View a Job-contact
-exports.contactshow = (req, res) => {
-  const { UserId } = res.locals
-  models.Contact.findAll({where:{UserId:UserId,id:req.params.id}}).then((contact) => {
-    if (contact === null) {
-      res.status(404).json({ message: 'Contact Not Found.' })
-      return
-    }
 
-    res.status(200).json({ message: 'Contact Details Fetched.', contact })
-  }).catch((err) => {
-    res.status(500).json({ message: "Something Doesn't seem right" ,err:err})
-  })
-}
-
-
-// Update a Job-contacts
-exports.updatecontact = (req, res) => {
-  const { UserId } = res.locals
-  if (!req.body.details) {
-    res.status(204).json({ message: 'No content Provided.' })
-    return
-  }
-
-  models.Contact.update(
-    req.body.details,
-    { where: { id: req.params.id,UserId:UserId } },
-  ).then(() => {
-    res.status(200).json({ message: 'Contact Updated Successfully!' })
-  }).catch((err) => {
-    res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
-  })
-}
-
-// Delete an Job-contacts
-exports.destroycontact = (req, res) => {
-  const { UserId } = res.locals
-  models.Contact.destroy({
-    where: {
-      id: req.params.id,
-      UserId:UserId
-    },
-  }).then(() => {
-    res.status(204).json({ message: 'Contact Deleted Successfully!' })
-  }).catch((err) => {
-    res.status(400).json({ message: err.errors[0].message })
-  })
-}
 
 
 
