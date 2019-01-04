@@ -161,7 +161,7 @@ exports.contactindexjob = (req, res) => {
 exports.createcontact = (req, res) => {
   const { UserId } = res.locals
   const { JobId } = res.locals
-  console.log(res.locals.Job,UserId,req.body)
+  console.log(JobId,UserId,req.body)
   if (req.body) {
     // check valid input-contacts fields
     models.Contact.create({
@@ -175,7 +175,7 @@ exports.createcontact = (req, res) => {
       console.log(e)
       res.status(201).json({ message: 'Contact Created.' })
     }).catch((err) => {
-      res.status(500).json({ message: 'Something Went Wrong. in body', err: err.code })
+      res.status(500).json({ message: 'Something Went Wrong. in body', err: err })
     })
   } else {
     res.status(400).json({ message: 'Invalid Data.' })

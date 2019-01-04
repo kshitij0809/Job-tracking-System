@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
     },
     personNumber: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: true,
     }
    

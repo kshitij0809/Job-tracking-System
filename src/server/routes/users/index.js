@@ -29,6 +29,7 @@ import TokenMiddleware from '../../app/middlewares/TokenMiddleware'
 
 // import { SPP_ROLE } from '../roles'
 import JobsMiddleware from '../../app/middlewares/JobsMiddleware'
+import jobTablesMiddleware from '../../app/middlewares/jobTablesMiddleware'
 
 const router = express.Router()
 
@@ -63,6 +64,7 @@ router.use(
 )
 
 
+
 // User Job routes
 
 router.post(
@@ -91,10 +93,26 @@ router.get(
 )
 
 
+
+
+router.use(
+  '/addcontact/:id',
+  jobTablesMiddleware.verify,
+)
+
+router.use(
+  '/jobcontacts/:id',
+  jobTablesMiddleware.verify,
+)
+
+
+
+
+
 // User Job-contacts routes
 
 router.post(
-  '/addcontact',
+  '/addcontact/:id',
   JobController.createcontact,
 )
 
@@ -119,9 +137,42 @@ router.get(
 )
 
 router.get(
-  '/jobcontacts',
+  '/jobcontacts/:id',
   JobController.contactindexjob,
 )
+
+
+// // User Job-documents routes
+
+// router.post(
+//   '/adddocument',
+//   JobController.createdocument,
+// )
+
+// router.put(
+//   '/adddocument/:id',
+//   JobController.updatedocument,
+// )
+
+// router.delete(
+//   '/adddocument/:id',
+//   JobController.destroydocument
+// )
+
+// router.get(
+//   '/documents',
+//   JobController.documentindex,
+// )
+
+// router.get(
+//   '/document/:id',
+//   JobController.documentshow,
+// )
+
+// router.get(
+//   '/jobdocuments',
+//   JobController.documentindexjob,
+// )
 // router.get(
 //   '/status/:JobId',
 //   UserController.getJobStatus,
