@@ -197,3 +197,41 @@ exports.contactshow = (req, res) => {
   })
 }
 
+
+// Update a Job-contacts
+exports.updatecontact = (req, res) => {
+  const { UserId } = res.locals
+  if (!req.body.details) {
+    res.status(204).json({ message: 'No content Provided.' })
+    return
+  }
+
+  models.Contact.update(
+    req.body.details,
+    { where: { id: req.params.id,UserId:UserId } },
+  ).then(() => {
+    res.status(200).json({ message: 'Contact Updated Successfully!' })
+  }).catch((err) => {
+    res.status(500).json({ message: 'Something Went Wrong.', err: err.code })
+  })
+}
+
+// Delete an Job-contacts
+exports.destroycontact = (req, res) => {
+  const { UserId } = res.locals
+  models.Contact.destroy({
+    where: {
+      id: req.params.id,
+      UserId:UserId
+    },
+  }).then(() => {
+    res.status(204).json({ message: 'Contact Deleted Successfully!' })
+  }).catch((err) => {
+    res.status(400).json({ message: err.errors[0].message })
+  })
+}
+
+
+
+
+  
