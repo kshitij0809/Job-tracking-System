@@ -1,9 +1,9 @@
 import models from '../models'
 
 exports.verify = (req, res, next) => {
-  var JobId  = req.params.id
+  const JobId  = req.params.JobId
   const { UserId } = res.locals
-  console.log("yefffs",UserId,JobId)
+  // console.log("yefffs",req.params,UserId)
 
   if (!JobId) {
     res.status(404).json({ message: 'Job Not Found.' })
@@ -13,7 +13,7 @@ exports.verify = (req, res, next) => {
   models.Job.findOne({where:{UserId:UserId,id:JobId}}).then((Job) => {
     // Check if Job exists
     if (!Job) {
-      res.status(404).json({ message: 'Job Not Found.' })
+      res.status(404).json({ message: 'Job Not Found.kkkk' })
       return
     }
 

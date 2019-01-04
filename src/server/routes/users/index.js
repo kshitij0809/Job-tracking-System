@@ -29,7 +29,7 @@ import TokenMiddleware from '../../app/middlewares/TokenMiddleware'
 
 // import { SPP_ROLE } from '../roles'
 import JobsMiddleware from '../../app/middlewares/JobsMiddleware'
-import jobTablesMiddleware from '../../app/middlewares/jobTablesMiddleware'
+import JobTablesMiddleware from '../../app/middlewares/jobTablesMiddleware'
 
 const router = express.Router()
 
@@ -96,14 +96,26 @@ router.get(
 
 
 router.use(
-  '/addcontact/:id',
-  jobTablesMiddleware.verify,
+  '/updatecontacts/:id/:JobId',
+  JobTablesMiddleware.verify,
 )
 
 router.use(
-  '/jobcontacts/:id',
-  jobTablesMiddleware.verify,
+  '/deletecontact/:id/:JobId',
+  JobTablesMiddleware.verify,
 )
+
+router.use(
+  '/addcontact/:JobId',
+  JobTablesMiddleware.verify,
+)
+
+router.use(
+  '/jobcontacts/:JobId',
+  JobTablesMiddleware.verify,
+)
+
+
 
 
 
@@ -112,17 +124,17 @@ router.use(
 // User Job-contacts routes
 
 router.post(
-  '/addcontact/:id',
+  '/addcontact/:JobId',
   JobController.createcontact,
 )
 
-router.put(
-  '/addcontact/:id',
+router.post(
+  '/updatecontacts/:id/:JobId',
   JobController.updatecontact,
 )
 
 router.delete(
-  '/addcontact/:id',
+  '/deletecontact/:id/:JobId',
   JobController.destroycontact
 )
 
@@ -137,7 +149,7 @@ router.get(
 )
 
 router.get(
-  '/jobcontacts/:id',
+  '/jobcontacts/:JobId',
   JobController.contactindexjob,
 )
 

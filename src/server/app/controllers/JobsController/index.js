@@ -161,7 +161,7 @@ exports.contactindexjob = (req, res) => {
 exports.createcontact = (req, res) => {
   const { UserId } = res.locals
   const { JobId } = res.locals
-  console.log(JobId,UserId,req.body)
+  // console.log(res.locals)
   if (req.body) {
     // check valid input-contacts fields
     models.Contact.create({
@@ -200,14 +200,16 @@ exports.contactshow = (req, res) => {
 
 // Update a Job-contacts
 exports.updatecontact = (req, res) => {
+  console.log("hwello",req.params,req.body)
   const { UserId } = res.locals
-  if (!req.body.details) {
+  if (!req.body) {
     res.status(204).json({ message: 'No content Provided.' })
     return
   }
 
+
   models.Contact.update(
-    req.body.details,
+    req.body,
     { where: { id: req.params.id,UserId:UserId } },
   ).then(() => {
     res.status(200).json({ message: 'Contact Updated Successfully!' })
